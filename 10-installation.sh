@@ -15,26 +15,3 @@ fi
 
 dnf install mysql -y  #  to install mysql 
 
-:' if [ $? -ne 0 ]  #  $? means previous command
-then
-    echo "Installation of mysql...FAILURE"
-    exit 1
-else
-    echo "Installation of mysql...SUCCESS"
-fi
-
-dnf install git -y
-
-if [ $? -ne 0 ]
-then
-    echo "Installation of git...FAILURE"
-    exit 1
-else
-    echo "Installation of Git...SUCCESS"
-fi 
-
-echo "is script proceeding?" '
-
-
-
-# : '  multi line comment in shell script '
